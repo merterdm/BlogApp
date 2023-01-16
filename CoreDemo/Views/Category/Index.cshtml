@@ -1,0 +1,27 @@
+﻿@model ICollection<Category>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Category Name</th>
+        <th>Status</th>
+        <th>Details</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.CategoryName</td>
+            <td>@item.Status</td>
+            <td><a href="#" class="btn btn-warning">Details</a></td>
+            <td><a href="#" class="btn btn-danger">Delete</a></td>
+        </tr>
+    }
+</table>

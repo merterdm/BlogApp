@@ -17,7 +17,7 @@ namespace BusinessLayer.Concrete
         {
             repository = new RepositoryBase<T>();
         }
-        public async Task<int> CreateAsync(T entity)
+        public virtual async Task<int> CreateAsync(T entity)
         {
             return await repository.CreateAsync(entity);
         }

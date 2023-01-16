@@ -9,5 +9,6 @@ namespace BusinessLayer.Abstract
 {
     public interface ICategoryManager:IManagerBase<Category>
     {
+
     }
 }
