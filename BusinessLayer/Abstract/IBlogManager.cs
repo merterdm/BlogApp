@@ -9,5 +9,6 @@ namespace BusinessLayer.Abstract
 {
     public interface IBlogManager:IManagerBase<Blog>
     {
+
     }
 }

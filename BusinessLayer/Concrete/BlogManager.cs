@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class BlogManager:ManagerBase<Blog>, IBlogManager
+    public class BlogManager : ManagerBase<Blog>, IBlogManager
     {
+        
     }
 }
