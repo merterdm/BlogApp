@@ -18,8 +18,7 @@ namespace CoreDemo.Controllers
         }
         public async Task<IActionResult> BlogDetails(int id)
         {
-            var result = await blogManager.FindAllIncludeAsync(p=>p.ID == id,p=>p.Category);
-            
+            var result = await blogManager.FindAllIncludeAsync(p=>p.ID == id,p=>p.Category);          
             return View(result.ToList());
         }
     }

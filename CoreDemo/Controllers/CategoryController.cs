@@ -17,7 +17,7 @@ namespace CoreDemo.Controllers
 
         }
         
-        public async Task< IActionResult> Index()
+        public async Task<IActionResult> Index()
         {
             var result =await categoryManager.FindAllAsnyc();    
             return View(result);
