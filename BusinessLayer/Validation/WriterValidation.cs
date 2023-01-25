@@ -12,7 +12,7 @@ namespace BusinessLayer.Validation
 	{
         public WriterValidation()
         {
-            RuleFor(p=>p.WriterName).NotEmpty().WithMessage("This field cannot be left blank.")
+            RuleFor(p => p.WriterName).NotEmpty().WithMessage("This field cannot be left blank.");
         }
     }
 }
